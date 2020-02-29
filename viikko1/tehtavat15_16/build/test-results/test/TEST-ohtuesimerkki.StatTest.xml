@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ohtuesimerkki.StatTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-02-29T16:34:09" hostname="DESKTOP-PGS5LA0" time="0.003">
+  <properties/>
+  <testcase name="loytaaOikeanPelaajan" classname="ohtuesimerkki.StatTest" time="0.001"/>
+  <testcase name="pelaajienMaara" classname="ohtuesimerkki.StatTest" time="0.0"/>
+  <testcase name="parhaitaOikeaMaara" classname="ohtuesimerkki.StatTest" time="0.0"/>
+  <testcase name="eiAnnaVaariaPelaajia" classname="ohtuesimerkki.StatTest" time="0.0"/>
+  <testcase name="eiTarjoaVaaraaPelaajaa" classname="ohtuesimerkki.StatTest" time="0.001"/>
+  <testcase name="parhaatPelaajat" classname="ohtuesimerkki.StatTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
