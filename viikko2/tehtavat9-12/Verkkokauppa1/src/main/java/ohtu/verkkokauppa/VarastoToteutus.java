@@ -1,15 +1,17 @@
 package ohtu.verkkokauppa;
 
 public class VarastoToteutus implements VarastoRajapinta {
-    private Varasto varasto;
 
-    public VarastoToteutus() {
-        varasto = Varasto.getInstance();
+    private Varasto varasto;
+    private Kirjanpito k;
+
+    public VarastoToteutus(Kirjanpito k) {
+        varasto = new Varasto(k);
     }
 
     @Override
     public Tuote haeTuote(int id) {
-         return varasto.haeTuote(id);
+        return varasto.haeTuote(id);
     }
 
     @Override
@@ -26,5 +28,5 @@ public class VarastoToteutus implements VarastoRajapinta {
     public void palautaVarastoon(Tuote t) {
         varasto.palautaVarastoon(t);
     }
-    
+
 }

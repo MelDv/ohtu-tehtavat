@@ -5,7 +5,7 @@ public class ViiteToteutus implements ViiteRajapinta{
     private Viitegeneraattori vg;
     
     public ViiteToteutus(){
-        vg = Viitegeneraattori.getInstance();
+        vg = new Viitegeneraattori();
     }
     @Override
     public int uusi() {

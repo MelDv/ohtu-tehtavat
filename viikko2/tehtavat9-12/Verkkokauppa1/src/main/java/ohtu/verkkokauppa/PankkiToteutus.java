@@ -3,9 +3,10 @@ package ohtu.verkkokauppa;
 
 public class PankkiToteutus implements PankkiRajapinta{
     private Pankki pankki;
+    private Kirjanpito k;
     
-    public PankkiToteutus(){
-        pankki = Pankki.getInstance();
+    public PankkiToteutus(Kirjanpito k){
+        pankki = new Pankki(k);
     }
 
     @Override
