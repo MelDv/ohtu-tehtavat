@@ -39,16 +39,16 @@ public class StatTest {
     }
 
     @Test
-    public void eiTarjoaVaaraaPelaajaa() {        
+    public void eiTarjoaVaaraaPelaajaa() {
         assertEquals(null, st.search("Virtanen"));
     }
-    
+
     //team
     @Test
     public void eiAnnaVaariaPelaajia() {
         assertEquals(EDMPlayers.toString(), st.team("EDM").toString());
     }
-    
+
     //topScorers
     @Test
     public void parhaitaOikeaMaara() {
