@@ -1,11 +1,13 @@
-
 package ohtu.verkkokauppa;
 
-public class PankkiToteutus implements PankkiRajapinta{
+import org.springframework.stereotype.Component;
+
+@Component
+public class PankkiToteutus implements PankkiRajapinta {
+
     private Pankki pankki;
-    private Kirjanpito k;
-    
-    public PankkiToteutus(Kirjanpito k){
+
+    public PankkiToteutus(Kirjanpito k) {
         pankki = new Pankki(k);
     }
 

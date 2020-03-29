@@ -1,14 +1,18 @@
-
 package ohtu.verkkokauppa;
 
-public class ViiteToteutus implements ViiteRajapinta{
+import org.springframework.stereotype.Component;
+
+@Component
+public class ViiteToteutus implements ViiteRajapinta {
+
     private Viitegeneraattori vg;
-    
-    public ViiteToteutus(){
+
+    public ViiteToteutus() {
         vg = new Viitegeneraattori();
     }
+
     @Override
     public int uusi() {
-       return vg.uusi();
-    }   
+        return vg.uusi();
+    }
 }
