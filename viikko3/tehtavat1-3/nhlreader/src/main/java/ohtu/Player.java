@@ -1,5 +1,7 @@
 package ohtu;
 
+import java.util.Comparator;
+
 public class Player {
 
     private String name;
@@ -7,6 +9,10 @@ public class Player {
     private String nationality;
     private int goals;
     private int assists;
+
+    public int getSum() {
+        return goals + assists;
+    }
 
     public String getNationality() {
         return nationality;
@@ -46,9 +52,9 @@ public class Player {
 
     @Override
     public String toString() {
-        if (nationality.equals("FIN")) {
-            return name + " team " + team + " goals " + goals + " assists " + assists + "\n";
+        for (int i = name.length(); i < 25; i++) {
+            this.name = this.name.concat(" ");
         }
-        return "";
+        return name + team + "\t   " + goals + " + " + assists + "\t  =    " + (goals + assists) + "\n";
     }
 }
