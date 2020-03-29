@@ -9,6 +9,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 import ohtu.io.*;
 import ohtu.data_access.*;
+import ohtu.domain.User;
 import ohtu.services.*;
 
 public class Stepdefs {
@@ -65,4 +66,66 @@ public class Stepdefs {
         assertTrue(io.getPrints().contains(expectedOutput));
     }
 
+    @Given("^command new is selected$")
+    public void commandNewSelected() throws Throwable {
+        inputLines.add("new");
+    }
+
+    @When("creation is successful with valid username and password")
+    public void validUsernameAndPassword(String username, String password) {
+        auth.createUser(username, password);
+    }
+
+    @When("creation fails with already taken username and valid password")
+    public void usernameIsTaken(String username, String password) {
+        auth.createUser(username, password);
+    }
+
+    @When("creation fails with too short username and valid password")
+    public void usernameIsTooShort(String username, String password) {
+        auth.createUser(username, password);
+    }
+
+    @When("creation fails with valid username and too short password")
+    public void passwordIsTooShort(String username, String password) {
+        auth.createUser(username, password);
+    }
+
+    @When("creation fails with valid username and password long enough but consisting of only letters")
+    public void passwordConsistsOfOnlyLetters(String username, String password) {
+        auth.createUser(username, password);
+    }
+
+    @Given("user {string} with password {string} is created")
+    public void userWithPasswordIsCreated(String string, String string2) throws Throwable {
+        inputLines.add("new");
+    }
+
+    @When("eero can successfully generate an account")
+    public void userEeroIsCreated(String string, String string2) {
+        User u = new User(string, string2);
+        userDao.add(u);
+        inputLines.add(string);
+        inputLines.add(string2);
+
+        io = new StubIO(inputLines);
+        app = new App(io, auth);
+        app.run();
+    }
+
+//
+//    @Given("user {string} with password {string} logs in")
+//    public void userWithPasswordLogsIn(String string, String string2) throws Throwable {
+//        inputLines.add("login");
+//    }
+//
+//    @When("eero can login")
+//    public void eeroCanLogIn(String username, String password) {
+//        auth.createUser(username, password);
+//    }
+//
+//    @Then("system will create user and say {string}")
+//    public void systemWillCreateUserAndSay(String string) {
+//        assertTrue(io.getPrints().contains(string));
+//    }
 }
