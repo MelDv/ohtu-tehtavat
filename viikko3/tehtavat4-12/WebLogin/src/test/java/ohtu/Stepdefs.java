@@ -60,6 +60,25 @@ public class Stepdefs {
         assertTrue(driver.getPageSource().contains(pageContent));
     }
 
+    @Given("user with username {string} with password {string} is successfully created")
+    public void userWithUsernameWithPasswordIsSuccessfullyCreated(String username, String password) {
+    }
+
+//    @Then("a new user is created")
+//    public void aNewUserIsCreated() {
+//        pageHasContent("Welcome to Ohtu Application!");
+//    }
+
+    @Given("user with username {string} and password {string} is tried to be created")
+    public void userWithUsernameAndPasswordIsTriedToBeCreated(String username, String password) {
+    }
+
+    @Then("user is not created and error message is given")
+    public void userIsNotCreatedAndErrorMessageIsGiven() {
+        pageHasContent("invalid username or password");
+        pageHasContent("Give your credentials to login");
+    }
+
     @After
     public void tearDown() {
         driver.quit();
