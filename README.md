@@ -9,4 +9,4 @@ Viikko | Tehtävät | Linkki
 2 | 7 - 8 | <https://github.com/MelDv/ohtu-tehtavat>
 2 | 9 - 12 | <https://github.com/MelDv/ohtu-tehtavat/tree/master/viikko2/tehtavat9-12/Verkkokauppa1>
 3 | 1 - 3 | <https://github.com/MelDv/ohtu-tehtavat/tree/master/viikko3/tehtavat1-3/nhlreader>
-3 | 4 - 11 | <https://github.com/MelDv/ohtu-tehtavat/tree/master/viikko3/tehtavat4-11>
+3 | 4 - 11 | <https://github.com/MelDv/ohtu-tehtavat/tree/master/viikko3/tehtavat4-12>
