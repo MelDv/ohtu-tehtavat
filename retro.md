@@ -21,5 +21,5 @@ ja 25 suuremmilla.
 Tämän retrospektiivitekniikassa palaverin pituus on rajattu tuntiin. Jokainen osallistuja saa vartin aikaa 
 kirjoittaa erillisiin kortteihin omat mietteensä Glad, Sad ja Mad -kategorioissa. Tämän jälkeen jokainen 
 kertoo pikaisesti korttiensa otsikoista ja otsikot kirjataan taululle äänestystä varten. Tämäkin vaihe kestää 
-noin vartin. Tiimi valitsee äänestämällä, mitkä positiiviset, negatiiviset ja ärsyttävät asiat palaverissa käsitellään. Käsittelyjärjestys on eniten ääniä saanesta alaspäin, kunnes tunti 
+noin vartin. Tiimi valitsee äänestämällä, mitkä positiiviset, negatiiviset ja ärsyttävät asiat palaverissa käsitellään. Käsittelyjärjestys on eniten ääniä saaneesta alaspäin, kunnes tunti 
 tulee täyteen, tai kaikki aiheet on käsitelty.
