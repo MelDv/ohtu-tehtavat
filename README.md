@@ -15,5 +15,5 @@ Viikko | Tehtävät | Linkki
 4 | 3 - 4  | <https://github.com/MelDv/ohtu-tehtavat/tree/master/viikko4/tehtavat3-4>
 4 | 5 | <https://github.com/MelDv/ohtu-tehtavat/tree/master/viikko4/tehtava5>
 4 | 6 | <https://github.com/MelDv/ohtu-tehtavat/tree/master/viikko4/tehtava6>
-5 | 1 - 5 | <https://github.com/MelDv/ohtu-tehtavat/commit/6c96a0e572724d8329f7544c7816cd2fc3d07dd5>
+5 | 1 - 5 | <https://github.com/MelDv/ohtu-tehtavat/tree/master/viikko5>
 5 | 6 | <https://github.com/MelDv/ohtu-tehtavat/blob/master/retro.md>
